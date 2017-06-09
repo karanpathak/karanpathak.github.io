@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wedding Anniversary</title>
+  <author>Karan Pathak </author>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+ var map;
+ var markermap;
+ 
+ function myMap() {
+              var mapCanvas = document.getElementById("map");
+              var myCenter = new google.maps.LatLng(28.589918, 77.225243); 
+              var mapOptions = {center: myCenter, zoom: 18};
+              map = new google.maps.Map(mapCanvas,mapOptions);
+              
+              markermap= new google.maps.Marker({
+                position: myCenter,
+                animation: google.maps.Animation.BOUNCE
+              });
+              markermap.setMap(map);
+
+            
+            }
+
+</script>
+
+<style>
+  body {
+      position: relative; 
+  }
+  #occasion {padding-top:50px;height:450px;color: black; /*background-color: #fafafa;*/}
+  #rendezvous {padding-top:10px;padding-bottom: 20px;height:auto;color:black; background-color: #ff704d;/*#fff0b3;*/}
+  #som {padding:30px 10px;height:400px;color: black; /*background-color: #f1dada;*/}
+
+  #occasion,#som, #rendezvous{
+    background-color:#ff9980;
+  }
+  .navbar-default{
+  	background-color: #FFD700;/*#ffbf00;*/
+  }
+
+  .navbar-nav > li > a{
+  	color:#cc0000 !important;
+  }
+
+  .navbar-brand{
+  	color: #ff0000 !important;
+    font-size: 22px;
+  }
+
+  .navbar-nav > .active > a{
+  	background-color:#f2d9d9 !important;
+  }
+
+  #map {
+        width: 100%;
+        height: 90%;
+        position: relative;
+        overflow: hidden;
+      }
+
+
+   </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+  
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">50th Wedding Anniversary</a>
+  </div>
+  
+  <div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#occasion">Occasion</a></li>
+        <li><a href="#rendezvous">Rendezvous</a></li>
+        <li><a href="#som">Show on Map</a></li>
+        <li><a href="#credits">Credits</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+</nav>    
+
+<div id="occasion" class="container-fluid">
+<h3>Mrs & Mr Pathak</h3>
+    <iframe style="width:100%;height:80%;padding: 5px" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/TeDspJ5P7XY?autoplay=0"></iframe>
+</div>
+
+<div id="rendezvous" class="container-fluid text-center">
+  <h2><span style="border-bottom: solid black 2px"> Venue and Time</span></h2>
+  <h4 style="padding-top: 15px;">Sunday, 18th June, 2017</h4>
+  <h4 style="padding-bottom: 15px;">7:30 pm onwards</h4>
+  <h4 style="padding:5px;padding-bottom:10px;">At Silver Oak Hall, India Habitat Centre, Lodhi Road, Near Airforce Bal Bharati School, New Delhi, Delhi 110003</h4>
+
+  <h5>
+  <div class="col-xs-6 text-left">Vikram, Rittika</div>
+  <div class="col-xs-6 text-right">Abhijeet, Shilpa</div>
+  </h5>
+  <h5>
+  <div class="col-xs-6 text-left">Karan, Tanisha</div>
+  <div class="col-xs-4 col-xs-offset-2 text-left">Pranshu</div>
+  </h5>
+  
+</div>
+
+<div id="som" class="container-fluid">
+<div id="map"></div>
+</div>
+
+<div id="credits" class="container-fluid text-center">
+<p>Created by : Karan Pathak </p>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgZ2gIJUHRo9-Pszv1-xW4bjCKQTtIUlo&callback=myMap"></script>
+</body>
+</html>
