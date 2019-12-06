@@ -27,13 +27,14 @@
   });
 
 $(window).on('load', function(){
-    var professional_project_ids = ["professional_seafloor", "professional_salt", "professional_fault"];
+    var professional_ds_ids = ["professional_seafloor", "professional_salt", "professional_fault"];
+    var professional_software_ids = ["professional_logstore_client", "professional_dlis_parser"];
     var capstone_project_ids = ["capstone_mouse_control"];
     var coursework_project_ids = ["coursework_mbso", "coursework_os", "coursework_trie", "coursework_ecommerce"];
 
     var professional_project_id, capstone_project_id, coursework_project_id;
 
-    for (professional_project_id of professional_project_ids){
+    for (professional_project_id of professional_ds_ids){
         var temp = $("#" + professional_project_id);
         temp.removeClass("d-none").addClass("d-flex");
         $("#all_projects").append(temp);
@@ -45,6 +46,13 @@ $(window).on('load', function(){
         temp.removeClass("d-none").addClass("d-flex");
         $("#all_projects").append(temp);
         $("#capstone_projects").append(temp.clone());
+    }
+
+    for (professional_project_id of professional_software_ids){
+        var temp = $("#" + professional_project_id);
+        temp.removeClass("d-none").addClass("d-flex");
+        $("#all_projects").append(temp);
+        $("#professional_projects").append(temp.clone());
     }
 
     for (coursework_project_id of coursework_project_ids){
