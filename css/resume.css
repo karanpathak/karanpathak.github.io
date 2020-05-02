@@ -180,7 +180,8 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+text-decoration: none;
+  /*color: #824027;*/
 }
 
 .project-border{
