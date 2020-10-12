@@ -30,9 +30,9 @@ $(window).on('load', function(){
     var professional_ds_ids = ["professional_seafloor", "professional_salt", "professional_fault"];
     var professional_software_ids = ["professional_logstore_client", "professional_dlis_parser"];
     var capstone_project_ids = ["capstone_mouse_control"];
-    var coursework_project_ids = ["coursework_mbso", "coursework_os", "coursework_trie", "coursework_ecommerce"];
+    var personal_project_ids = ["coursework_mbso", "coursework_os", "coursework_trie", "coursework_ecommerce"];
 
-    var professional_project_id, capstone_project_id, coursework_project_id;
+    var professional_project_id, capstone_project_id, personal_project_id;
 
     for (professional_project_id of professional_ds_ids){
         var temp = $("#" + professional_project_id);
@@ -55,11 +55,11 @@ $(window).on('load', function(){
         $("#professional_projects").append(temp.clone());
     }
 
-    for (coursework_project_id of coursework_project_ids){
-        var temp = $("#" + coursework_project_id);
+    for (personal_project_id of personal_project_ids){
+        var temp = $("#" + personal_project_id);
         temp.removeClass("d-none").addClass("d-flex");
         $("#all_projects").append(temp);
-        $("#coursework_projects").append(temp.clone());
+        $("#personal_projects").append(temp.clone());
     }
 });
 
