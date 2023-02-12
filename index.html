@@ -14,6 +14,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
@@ -23,6 +26,7 @@
     <link href="css/resume.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166123244-1"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -36,7 +40,6 @@
 </head>
 
 <body id="page-top">
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Karan Pathak</span>
@@ -44,8 +47,7 @@
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
             </span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -76,37 +78,29 @@
     </nav>
 
     <div class="container-fluid p-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+        <section class="resume-section d-flex align-items-center" id="about">
             <div class="w-100">
-                <h1 class="mb-0">Karan Pathak </h1>
-
-                <blockquote class="blockquote text-center py-2 my-5">
-                    <p class="mb-0">
-                        <i>When something is important enough, you do it even if the odds are not in your favor
-                        </i>
-                    </p>
-                    <footer class="blockquote-footer">Elon Musk</footer>
+                <h1 class="pl-3 ml-3 pt-5 pb-5 heading_name">Karan Pathak </h1>
+                <blockquote class="blockquote text-center py-5">
+                    <p><i>When something is important enough, you do it even if the odds are not in your favor</i></p>
+                    <footer class="blockquote-footer author">Elon Musk</footer>
                 </blockquote>
 
-                <p class="lead py-5 my-5">Optimizing my Life and reducing human efforts using machine learning.
-                    Currently
-                    working on computer vision problems. Interested in
-                    robotics intelligence particularly in reinforcement learning and autonomous driving.</p>
-
-                <div class="py-5 d-flex justify-content-center">
+                <!-- <p class="pl-2 ml-2 py-5 my-5 lead li_span">
+                        Optimizing my Life and reducing human efforts using machine learning. Currently working on computer vision problems. Interested in robotics intelligence particularly in reinforcement learning and autonomous driving.
+                </p> -->
+                <div class="w-100 d-flex flex-wrap justify-content-center logos_card">
                     <div class="px-3 pb-3 text-center">
                         <a href="https://medium.com/@karanpathak_" target="_blank" rel="Github" style="color:#333">
-                            <i class="fab fa-medium fa-3x"></i>
+                            <iconify-icon icon="ant-design:medium-square-filled" style="font-size: 2.8em;"></iconify-icon>
                             <div class="pt-2 text-center">
                                 Medium
                             </div>
                         </a>
                     </div>
                     <div class="px-3 pb-3 text-center">
-                        <a href="https://www.linkedin.com/in/karanpathak" target="_blank" rel="LinkedIn"
-                            style="color:#0976b4">
-                            <i class="fab fa-linkedin fa-3x"></i>
+                        <a href="https://www.linkedin.com/in/karanpathak" target="_blank" rel="LinkedIn" style="color:#0976b4">
+                            <iconify-icon icon="bxl:linkedin-square" style="font-size: 2.8em;"></iconify-icon>
                             <div class="pt-2 text-center">
                                 LinkedIn
                             </div>
@@ -114,7 +108,7 @@
                     </div>
                     <div class="px-3 pb-3 text-center">
                         <a href="https://github.com/karanpathak" target="_blank" rel="Github" style="color:#333">
-                            <i class="fab fa-github fa-3x"></i>
+                            <iconify-icon icon="bi:github" style="font-size: 2.8em;"></iconify-icon>
                             <div class="pt-2 text-center">
                                 GitHub
                             </div>
@@ -122,9 +116,8 @@
                     </div>
 
                     <div class="px-3 pb-3 text-center">
-                        <a href="https://www.hackerrank.com/karanpathak" target="_blank" rel="Hackerrank"
-                            style="color:green">
-                            <i class="fab fa-hackerrank fa-3x"></i>
+                        <a href="https://www.hackerrank.com/karanpathak" target="_blank" rel="Hackerrank" style="color:green">
+                            <iconify-icon icon="fa-brands:hackerrank" style="font-size: 2.8em;"></iconify-icon>
                             <div class="pt-2 text-center">
                                 HackerRank
                             </div>
@@ -132,21 +125,19 @@
 
                     </div>
                     <div class="px-3 pb-3 text-center">
-                        <a href="https://www.datacamp.com/profile/karanpathak" target="_blank" rel="DataCamp"
-                            style="color: #249ccc">
-                            <i class="icon icon-datacamp fa-3x"></i>
-                            <div class="pt-1 text-center">
+                        <a href="https://www.datacamp.com/profile/karanpathak" target="_blank" rel="DataCamp" style="color: #249ccc">
+                            <iconify-icon icon="simple-icons:datacamp" style="font-size: 2.8em;"></iconify-icon>
+                            <div class="pt-2 text-center">
                                 DataCamp
                             </div>
                         </a>
 
                     </div>
                     <div class="px-3 pb-3 text-center">
-                        <a href="https://www.qwiklabs.com/public_profiles/6773058f-d3bd-4797-a756-303c658264a4"
-                            target="_blank" rel="Qwiklabs" style="color: #ffcd1a">
-                            <i class="icon icon-qwiklabs fa-3x"></i>
-                            <div class="pt-1 text-center">
-                                <b style="color: #ffc800">Qwicklabs</b>
+                        <a href="https://www.qwiklabs.com/public_profiles/6773058f-d3bd-4797-a756-303c658264a4" target="_blank" rel="Qwiklabs" style="color: #ffcd1a">
+                            <iconify-icon icon="simple-icons:qwiklabs" style="font-size: 2.8em;"></iconify-icon>
+                            <div class="pt-2 text-center" style="color: #ffc800">
+                                Qwicklabs
                             </div>
                         </a>
 
@@ -160,120 +151,141 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
             <div class="w-100">
-                <h2 class="mb-5">Experience</h2>
-
+                <h2 class="mb-5 experience">TECHNICAL WORK EXPERIENCE</h2>
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
                     <div class="resume-content">
                         <ul class="list-inline mb-3 d-inline-flex">
-                            <li><img src="img/dt.png" width="50" height="50"></li>
+                            <li><img src="img/dt_logo.png" width="50" height="50"></li>
                             <li>
-                                <h3 class="ml-2 text-*-center">DataTurtles</h3>
+                                <h3 class="ml-2 text-*-center">DataTurtles LLP</h3>
                             </li>
                         </ul>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-2">
-                                    <h4 class="subheading">Founder</h4>
-                                </li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li>
+                                        <h4 class="subheading">Chief Technology Officer</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Jul 2020 – Jul 2022 | Noida, India</span>
+                            </div>
                         </div>
-                        <p>
-                            Building a community of thriving researchers, professionals and enthusiasts in AI domain for
-                            knowledge sharing through different platforms and media.
-                            <br><br>Visit us - <a href="https://www.dataturtles.com/" target="_blank"
-                                alt="">DataTurtles</a>
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">July 2020 - Present</span>
-                    </div>
-                </div>
-
-                <hr class="m-2">
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4 pt-3">
-                    <div class="resume-content">
-                        <ul class="list-inline mb-3 d-inline-flex">
-                            <li><img src="img/slb.png" width="70" height="50"></li>
-                            <li>
-                                <h3 class="ml-2 text-*-center">Schlumberger</h3>
-                            </li>
-                        </ul>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-2">
-                                    <h4 class="subheading">Data Scientist</h4>
-                                </li>
-                                <li>
-                                    <h4 class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Sub-Surface
-                                            Team</span></h4>
-                                </li>
-                            </ul>
-                        </div>
-                        <p>
-                            Working on problems to detect various seismic geobodies such as Faults, Top of Salt, and
-                            Seafloor using techniques like semantic segmentation with 2D and 3D CNN,
-                            deep transfer learning, and weakly supervised deep learning respectively.
-                            <ul class="fa-ul mt-1 mb-4">
-                                <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Working with terabytes
-                                        of seismic data for training deep machine learning models.</span>
-                                </li>
-                                <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Have experience in
-                                        dealing with problems subjective in nature and having imbalanced classes.</span>
-                                </li>
-                                <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Presented my research
-                                        work on Fault and Seafloor detection using deep learning in TECHDAY conference
-                                        (internal) at Schlumberger Pune</span>
-                                </li>
-                                <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Filed a <b>provisional
-                                            patent</b> on SEAFLOOR DELINEATION USING MACHINE LEARNING. U.S. Provisional
-                                        <b>Patent Application no.: 62/914,608</b>.</span>
-                                </li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">July 2018 - June 2020</span>
-                    </div>
-                </div>
-
-                <hr class="m-2">
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4 pt-3">
-                    <div class="resume-content">
-                        <ul class="list-inline mb-3 d-inline-flex">
-                            <li><img src="img/slb.png" width="70" height="50"></li>
-                            <li>
-                                <h3 class="ml-2 text-*-center">Schlumberger</h3>
-                            </li>
-                        </ul>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-2">
-                                    <h4 class="subheading">Software Engineer</h4>
-                                </li>
-                                <li>
-                                    <h4 class="ml-1 text-*-center subheading"><span class="mx-1">|</span><span>Data
-                                            Ingestion
-                                            Team</span></h4>
-                                </li>
-                            </ul>
-                        </div>
-                        <p>Built various microservices in python and nodeJs to ingest user’s Oil Field data in cloud
-                            environment - DELFI portal.</p>
+                        
                         <ul class="fa-ul mt-1 mb-4">
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Worked on technologies
-                                    like grpc, microservice architecture etc.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Managed and delivered custom software solutions for clients to increase their business growth.</span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Developed microservices to
-                                    parse and store gigabytes of data within few minutes.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Led a four-person team of full-stack developers & UI/UX designers to build software solutions using ExpressJS, ReactJS, PostgreSQL, AWS, and Vercel.</span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Have experience in
-                                    building and deploying microservices in google app engine</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Analyzed business requirements and designed cost-efficient end-to-end scalable customer engagement systems such as WhatsApp chatbot, Lead & Email marketing tool, etc.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Collaborated with a 3-person team to develop and deploy a Gardening E-Commerce Marketplace solution on AWS Fargate using AWS ECS service.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Developed a forecasting model using LSTM in PyTorch for a Fortune 1000 company to reduce raw material storage costs by 23%.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Created a Software Development Kit in Python (similar to AWS Boto3) for an AI-Cloud Platform to automate & manage the computing, AI, pipelining, data storage, and model deployment on the platform through the SDK.</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">July 2017 - June 2018</span>
+                </div>
+
+                <hr class="m-2">
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4 pt-3">
+                    <div class="resume-content">
+                        <ul class="list-inline mb-3 d-inline-flex">
+                            <li><img src="img/slb.png" width="70" height="50"></li>
+                            <li>
+                                <h3 class="ml-2 text-*-center">Schlumberger Limited</h3>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li>
+                                        <h4 class="subheading">Data Analytics Engineer</h4>
+                                    </li>
+                                    <li>
+                                        <h4 class="ml-1 text-*-center subheading">
+                                            <span class="mx-1">|</span><span>Sub-Surface Team</span></h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Jul 2018 – Jun 2020 | Pune, India</span>
+                            </div>
+                        </div>
+                        
+                            <ul class="fa-ul mt-1 mb-4">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-square"></i></span>
+                                    <span class="li_span">Worked on automating Seismic Fault interpretation by building deep convolutional semantic segmentation models in Keras to achieve human-level accuracy and reduce manual efforts from 3 months to 40 hours.</span>
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-square"></i></span>
+                                    <span class="li_span">Co-developed an automated Seabed detection solution using a weakly supervised learning convolutional model which outperformed the state-of-the-art solution by 4%.</span>
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-square"></i></span>
+                                    <span class="li_span">Collaborated with a data engineer to develop a distributed prediction service (deployed in GCP) using Zarr & PySpark to reduce prediction time from 68 hours to 14 hours for a 1 PB file.</span>
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-square"></i></span>
+                                    <span class="li_span">Developed a post-processor for the Seismic Fault interpretation pipeline using a 3D U-Net in Keras to remove spatiotemporal seismic noises and increase the overall prediction accuracy by 7%.</span>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="m-2">
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4 pt-3">
+                    <div class="resume-content">
+                        <ul class="list-inline mb-3 d-inline-flex">
+                            <li><img src="img/slb.png" width="70" height="50"></li>
+                            <li>
+                                <h3 class="ml-2 text-*-center">Schlumberger Limited</h3>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li>
+                                        <h4 class="subheading">Software Engineer</h4>
+                                    </li>
+                                    <li>
+                                        <h4 class="ml-1 text-*-center subheading">
+                                            <span class="mx-1">|</span><span>Data Ingestion Team</span>
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Jul 2017 – Jun 2018 | Pune, India</span>
+                            </div>
+                        </div>
+                        <ul class="fa-ul mt-1 mb-4">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Converted a monolithic application, to parse & store DLIS files (petroleum log file format) in a petroleum Logstore, into a micro-services application using ExpressJS & GCP (compute engine & Pub/Sub). Decreased the processing time from 3 mins to 35 seconds for a 1 GB file.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Built a client library in Python for accessing well logs from a petroleum well logs storage system.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -286,71 +298,376 @@
                                 <h3 class="ml-2 text-*-center">ADmyBRAND</h3>
                             </li>
                         </ul>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-2">
-                                    <h4 class="subheading">Data Science Intern</h4>
-                                </li>
-                                <li>
-                                    <h4 class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>8hoarding</span>
-                                    </h4>
-                                </li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>            
+                                <ul class="list-inline d-inline-flex">
+                                    <li>
+                                        <h4 class="subheading">Data Science Intern</h4>
+                                    </li>
+                                    <li>
+                                        <h4 class="ml-1 text-*-center subheading">
+                                            <span class="mx-1">|</span><span>8hoarding</span>
+                                        </h4>
+                                    </li>
+                                </ul>  
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">15<sup>th</sup> August 2016 - 30<sup>th</sup> September 2016</span>
+                            </div>
                         </div>
+                        
                         <div class="subheading mb-3"></div>
-                        <p>Worked for an advertisement management startup. Internship was focused on data extraction and
+                        <p class="li_span">Worked for an advertisement management startup. Internship was focused on data extraction and
                             data cleaning for media hoarding booking product named “8hoarding”.</p>
                         <ul class="fa-ul mt-1 mb-4">
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Built web scrapers to
+                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span class="li_span">Built web scrapers to
                                     extract hoarding information from different websites.</span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Developed complex scrapers
+                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span class="li_span">Developed complex scrapers
                                     to handle AJAX pagination on websites.</span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Used SFrame python module
+                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span class="li_span">Used SFrame python module
                                     for data cleaning.</span>
                             </li>
                         </ul>
-                        <p><a href="https://www.slideshare.net/slideshow/embed_code/key/AxLHMAqZAzkaEZ"
-                                target="_blank">Letter
-                                of Acknowledgement</a></p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">15<sup>th</sup> August 2016 - 30<sup>th</sup> September 2016</span>
+                        <!-- <p>
+                            <a href="https://www.slideshare.net/slideshow/embed_code/key/AxLHMAqZAzkaEZ" target="_blank">Letter of Acknowledgement</a>
+                        </p> -->
                     </div>
                 </div>
-
             </div>
-
         </section>
 
         <hr class="m-0">
 
         <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
             <div class="w-100">
-                <h2 class="mb-5">Projects</h2>
-                <div id="professional_fault"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
-                    <div class="resume-content">
+                <h2 class="mb-5">TECHNICAL PROJECTS</h2>
+                <div id="professional_1" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
+                        <h3 class="mb-0 li_span">FloodMetaSegNet - Flood Damage Extent Detection Using Satellite Images and Meta Attributes</h3>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">Simon Fraser University</span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Oct 2022 - present</span>
+                            </div>
+                        </div>
+                        <ul class="fa-ul mt-1 mb-4">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Co-developed FloodMetaSegNet (deep convolutional semantic segmentation model with meta channel) using PyTorch, GeoPandas, Rasterio and Shapely to determine the extent of building damage caused by floods using satellite images and elevation attributes.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Applied transfer learning using renowned flood damage datasets to overcome the data shortage.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Increased Dice score by 80% and Tversky score by 30% as compared with segmentation models without meta attributes.</span>
+                            </li>
+                        </ul>
+
+                        <div class="social-icon d-flex pt-4 pb-2">
+                            <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
+                            <div>
+                                <iconify-icon icon="skill-icons:pytorch-light" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <img class="mx-1" style="width: 1.5em; height: 1.5em;" src="./img/geopandas_icon.png" alt="geopandas_icon"/>
+                                <iconify-icon icon="cib:qgis" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:aws" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="professional_2" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
+                        <h3 class="mb-0 li_span">Gardening E-Commerce Marketplace</h3>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">DataTurtles LLP</span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Oct 2021 - Jul 2022</span>
+                            </div>
+                        </div>
+                        <ul class="fa-ul mt-1 mb-4">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Collaborated with a 3-person team to develop a Gardening E-Commerce Marketplace solution using ReactJS, ExpressJS, PostgreSQL, and Prisma (ORM).</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Deployed the solution to AWS Fargate using AWS ECS service to handle a variable concurrent customer load.</span>
+                            </li>
+                        </ul>
+
+                        <div class="social-icon d-flex pt-4 pb-2">
+                            <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
+                            <div>
+                                <iconify-icon icon="vscode-icons:file-type-reactjs" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="skill-icons:expressjs-light" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:typescript-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:supabase-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:prisma" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:vercel-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:aws" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="professional_3" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
+                        <h3 class="mb-0 li_span">Error logging module</h3>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">DataTurtles LLP</span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Jun 2022 - Jun 2022</span>
+                            </div>
+                        </div>
+                        <ul class="fa-ul mt-1 mb-4">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Designed and co-developed a NodeJS package to log information and errors from NodeJS cloud applications into different services like Axiom, GCP Cloud Logging, AWS CloudWatch, etc., which reduced the development time.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Used in all the NodeJS cloud applications in the company.</span>
+                            </li>
+                        </ul>
+
+                        <div class="social-icon d-flex pt-4 pb-2">
+                            <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
+                            <div>
+                                <iconify-icon icon="logos:nodejs" class="mx-3" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:typescript-icon" class="mx-2" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="professional_4" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
+                        <h3 class="mb-0 li_span">Email Marketing Campaign Tool</h3>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">DataTurtles LLP</span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">May 2022 - May 2022</span>
+                            </div>
+                        </div>
+                        <ul class="fa-ul mt-1 mb-4">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Designed a cost-efficient email marketing campaign system to manage customer leads and schedule email sending based on the customer’s persona without landing emails in the spam folder.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Co-created microservices in ExpressJS to upload leads to the PostgreSQL database, manage email scheduling, and take actions based on customer responses.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Increase B2B product sales by 38%.</span>
+                            </li>
+                        </ul>
+                        <div class="social-icon d-flex pt-4 pb-2">
+                            <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
+                            <div>
+                                <iconify-icon icon="skill-icons:expressjs-light" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:typescript-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:supabase-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:prisma" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:vercel-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="professional_5" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
+                        <h3 class="mb-0 li_span">WhatsApp Chatbot for Customer Engagement</h3>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">DataTurtles LLP</span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Apr 2022 - May 2022</span>
+                            </div>
+                        </div>
+                        <ul class="fa-ul mt-1 mb-4">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Designed a rule-based Shopify-WhatsApp chatbot to enhance customer engagement experience like impulsive buying, customer inquiry resolution, etc.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Co-developed the application in ExpressJS and deployed it on Vercel (Serverless compute platform) and increased B2C product sales by 45%.</span>
+                            </li>
+                        </ul>
+                        <div class="social-icon d-flex pt-4 pb-2">
+                            <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
+                            <div>
+                                <iconify-icon icon="skill-icons:expressjs-light" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:typescript-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:supabase-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:prisma" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:vercel-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <!-- <p class="iconify">pipedream</p> -->
+                                <img class="mx-1" style="width: 2.2em; height: 2.2; margin-top: -.3em;" src="./img/wati.png" alt="wati"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="professional_6" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
+                        <h3 class="mb-0 li_span">AI-Platform SDK</h3>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">DataTurtles LLP</span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Feb 2022 - Mar 2022</span>
+                            </div>
+                        </div>
+                        <ul class="fa-ul mt-1 mb-4">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Designed and created a Software Development Kit in Python to automate & manage the compute, data storage, and model deployment on the AI-Platform through the SDK.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Helped platform's clients in running CPU & GPU-based data workloads and inference pipelines in development and production scenarios.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Deployed and served AI models as API using BentoML </span>
+                            </li>
+                        </ul>
+
+                        <div class="social-icon d-flex pt-4 pb-2">
+                            <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
+                            <div>
+                                <iconify-icon icon="vscode-icons:file-type-python" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="professional_7" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
+                        <h3 class="mb-0 li_span">Chemical Raw Material Inventory Optimization using Time-Series forecasting</h3>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">DataTurtles LLP</span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Dec 2021 - Feb 2022 </span>
+                            </div>
+                        </div>
+                        <ul class="fa-ul mt-1 mb-4">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Applied an LSTM model in PyTorch to forecast the consumption of individual chemicals in a complex series of chemical processes.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Reduced the raw material inventory storage costs by 23% by achieving a mean MAPE score of 8.7%. </span>
+                            </li>
+                        </ul>
+                        <div class="social-icon d-flex pt-4 pb-2">
+                            <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
+                            <div>
+                                <iconify-icon icon="skill-icons:pytorch-light" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="vscode-icons:file-type-python" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:numpy" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="simple-icons:pandas" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="simple-icons:plotly" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="mdi:math-tangent" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="personal_1" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
+                        <h3 class="mb-0 li_span">Alzheimer Research with Stall Catchers – Classify Stalled Blood Vessels In Brain Images</h3>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">Personal</span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Jul 2020 - Aug 2020</span>
+                            </div>
+                        </div>
+                        <ul class="fa-ul mt-1 mb-4">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Applied a CNN-LSTM network with a time-distributed layer on the Alzheimer video dataset to classify if a blood vessel is stalled or not in PyTorch.</span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Achieved the best Mathews Correlation Coefficient of 0.548 with EfficientNet-B2 spatial encoder.</span>
+                            </li>
+                        </ul>
+                        <div class="social-icon d-flex pt-4 pb-2">
+                            <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
+                            <div>
+                                <iconify-icon icon="skill-icons:pytorch-light" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:opencv" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="vscode-icons:file-type-python" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:numpy" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="simple-icons:pandas" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="simple-icons:plotly" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="professional_fault" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
                         <h3 class="mb-0">Fault geobody detection</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Deep Learning Application</span></li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Schlumberger</span></span></li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">Deep Learning Application</span></li>
+                                    <li>
+                                        <span class="ml-1 text-*-center subheading">
+                                            <span class="mx-1">|</span><span>Schlumberger</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">December 2018 - Jan 2020</span>
+                            </div>
                         </div>
                         <h4><u>Global model for fault geobody detection using deep supervised learning</u></h4>
                         <ul class="fa-ul mt-1 mb-4">
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Built a supervised 2D deep
-                                    CNN to detect fault geobody in seismic signals.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Built a supervised 2D deep CNN to detect fault geobody in seismic signals.</span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Trained on multiple
-                                    surveys with different distributions to achieve a global model.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Trained on multiple surveys with different distributions to achieve a global model.</span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Used Unet as the model
-                                    architecture.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Used Unet as the model architecture.</span>
                             </li>
                         </ul>
 
@@ -361,258 +678,249 @@
 
                         <div class="social-icon d-flex pt-4 pb-2">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <i class="iconify mx-1" style="color: #E32934" data-icon="simple-icons:keras"
-                                data-inline="true"></i>
-                            <i class="mx-1 iconify" data-icon="logos-tensorflow" data-inline="true"></i>
-                            <img class="iconify" src="img/python-icon.svg" alt="Python" />
+                            <div>
+                                <i class="iconify mx-1" style="color: #E32934" data-icon="simple-icons:keras"
+                                    data-inline="true"></i>
+                                <i class="mx-1 iconify" data-icon="logos-tensorflow" data-inline="true"></i>
+                                <iconify-icon icon="vscode-icons:file-type-python" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
                         </div>
-
-                    </div>
-
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">December 2018 - Present</span>
                     </div>
                 </div>
-                <div id="professional_salt"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
-                    <div class="resume-content">
+                <div id="professional_salt" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
                         <h3 class="mb-0">Salt body detection using network-based deep transfer learning</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Deep Learning Application</span></li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Schlumberger</span></span></li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">Deep Learning Application</span></li>
+                                    <li><span class="ml-1 text-*-center subheading"><span
+                                                class="mx-1">|</span><span>Schlumberger</span></span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">July 2018 – November 2018</span>
+                            </div>
                         </div>
                         <ul class="fa-ul mt-1 mb-4">
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Built a model to detect
-                                    the Top of Salt geobody using very few training data.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Built a model to detect the Top of Salt geobody using very few training data.
+                                </span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Used Tiramisu architecture
-                                    for semantic segmentation.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Used Tiramisu architecture for semantic segmentation.</span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Performed transfer
-                                    learning by training only the last few layers of the decoder of a model pre-trained
-                                    on seismic fault data and froze the remaining layers of the model.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Performed transfer learning by training only the last few layers of the decoder of a model pre-trained on seismic fault data and froze the remaining layers of the model.</span>
                             </li>
                         </ul>
                         <div class="social-icon d-flex py-2">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <i class="iconify mx-1" style="color: #E32934" data-icon="simple-icons:keras"
-                                data-inline="true"></i>
-                            <i class="mx-1 iconify" data-icon="logos-tensorflow" data-inline="true"></i>
-                            <img class="iconify" src="img/python-icon.svg" alt="Python" />
+                            <div>
+                                <i class="iconify mx-1" style="color: #E32934" data-icon="simple-icons:keras" data-inline="true"></i>
+                                <i class="mx-1 iconify" data-icon="logos-tensorflow" data-inline="true"></i>
+                                <iconify-icon icon="vscode-icons:file-type-python" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
                         </div>
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">July 2018 – November 2018</span>
-                    </div>
                 </div>
-                <div id="professional_seafloor"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
-                    <div class="resume-content">
+                <div id="professional_seafloor" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
                         <h3 class="mb-0">Sea-Floor detection using weakly supervised deep learning</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Deep Learning Research Application</span></li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Schlumberger</span></span></li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li>
+                                        <span class="subheading">Deep Learning Research Application</span>
+                                    </li>
+                                    <li><span class="ml-1 text-*-center subheading">
+                                        <span class="mx-1">|</span><span>Schlumberger</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">July 2019 – September 2019</span>
+                            </div>
                         </div>
                         <ul class="fa-ul mt-1 mb-4">
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Designed and developed a
-                                    unique process for accurately detecting seafloor.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span class="li_span">Designed and developed a unique process for accurately detecting seafloor.</span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Built a global model using
-                                    weakly supervised learning to predict seafloor and applied a series of smart post
-                                    processors on top of the model’s prediction to increase the overall accuracy.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span  class="li_span">Built a global model using weakly supervised learning to predict seafloor and applied a series of smart post processors on top of the model’s prediction to increase the overall accuracy.</span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Filed provisional patent.
-                                    U.S. patent no.: 62/914,608</span>
+                            <li><span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span>Filed provisional patent. U.S. patent no.: 62/914,608</span>
                             </li>
                         </ul>
                         <div class="social-icon d-flex py-2">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <i class="iconify mx-1" style="color: #E32934" data-icon="simple-icons:keras"
-                                data-inline="true"></i>
-                            <i class="mx-1 iconify" data-icon="logos-tensorflow" data-inline="true"></i>
-                            <img class="iconify" src="img/python-icon.svg" alt="Python" />
+                            <div>
+                                <i class="iconify mx-1" style="color: #E32934" data-icon="simple-icons:keras"
+                                    data-inline="true"></i>
+                                <i class="mx-1 iconify" data-icon="logos-tensorflow" data-inline="true"></i>
+                                <iconify-icon icon="vscode-icons:file-type-python" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
                         </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">July 2019 – September 2019</span>
                     </div>
                 </div>
-                <div id="capstone_mouse_control"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Real Time Mouse Cursor Control using Machine Learning</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Capstone - Machine Learning Research
-                                        Project</span>
-                                </li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>VIT</span></span></li>
-                            </ul>
+                <div id="capstone_mouse_control" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
+                        <h3 class="mb-0">Real-Time Hand Gesture-based Mouse Control</h3>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li>
+                                        <span class="subheading">Vellore Institute of Technology</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">Feb 2017 - May 2017</span>
+                            </div>
                         </div>
                         <ul class="fa-ul mt-1 mb-4">
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Developed a novel
-                                    algorithm for controlling mouse cursor in real time using webcam.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span  class="li_span">Developed a novel rotation and scale-invariant pipeline for controlling mouse pointers using a webcam. <a href="https://www.youtube.com/embed/gcHJ179Yop4">Demo</a></span>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>The algorithm is a two
-                                    step process - skin detection followed by gesture classification.</span>
-                            </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Solution is Rotation and
-                                    Scale invariant.</span>
-                            </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Designed novel features
-                                    for gesture classification using image processing techniques.</span>
-                            </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Defined custom hand
-                                    gestures to imitate major mouse functionalities like cursor movement, left click,
-                                    right click, drag and drop etc.</span>
-                            </li>
-                            <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Developed a desktop app in
-                                    python including a control panel to adjust cursor movement sensitivity.</span>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span  class="li_span">Defined custom hand gestures to imitate all the current mouse functionalities, including the drag-and-drop feature.</span>
                             </li>
                         </ul>
                         <div class="social-icon d-flex pt-3 mb-4">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <i class="iconify mx-1" style="color: #E32934" data-icon="simple-icons:keras"
-                                data-inline="true"></i>
-                            <i class="mx-1 iconify" data-icon="logos-tensorflow" data-inline="true"></i>
-                            <i class="mx-1 iconify" data-icon="logos-opencv" data-inline="true"></i>
-                            <img class="iconify" src="img/python-icon.svg" alt="Python" />
+                            <div>
+                                <iconify-icon icon="skill-icons:pytorch-light" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:opencv" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="vscode-icons:file-type-python" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:numpy" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                                <iconify-icon icon="logos:matplotlib-icon" class="mx-1" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
                         </div>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gcHJ179Yop4"
-                                allowfullscreen></iframe>
-                        </div>
-
-                        <!-- <iframe width="100%" height="auto" src="" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe> -->
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">January 2017 – April 2017</span>
                     </div>
                 </div>
-                <div id="professional_logstore_client"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
-                    <div class="resume-content">
+                <div id="professional_logstore_client" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
                         <h3 class="mb-0">Client Library for Logstore</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Software Engineering</span></li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Schlumberger</span></span></li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">Software Engineering</span></li>
+                                    <li><span class="ml-1 text-*-center subheading"><span class="mx-1">|</span><span>Schlumberger</span></span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">March 2018 – June 2018</span>
+                            </div>
                         </div>
-                        <p>Logstore is a distributed logs storage system used to store well logs of an Oil Field. I
-                            worked
-                            on building client library for logtore, and integrated logstore with different microservices
-                            developed by my team using the client library.</p>
+                        <p  class="li_span">Logstore is a distributed logs storage system used to store well logs of an Oil Field. I worked on building client library for logtore, and integrated logstore with different microservices developed by my team using the client library.</p>
                         <div class="social-icon d-flex py-2">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <img class="iconify" src="img/python-icon.svg" alt="Python" />
-                            <img class="iconify ml-1" style="width: 2.5em" src="img/grpcio.svg" alt="GRPC" />
+                            <div>
+                                <img class="iconify" src="img/python-icon.svg" alt="Python" />
+                                <img class="iconify ml-1" style="width: 2.5em" src="img/grpcio.svg" alt="GRPC" />
+                            </div>
                         </div>
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">March 2018 – June 2018</span>
-                    </div>
                 </div>
-                <div id="professional_dlis_parser"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
-                    <div class="resume-content">
+                <div id="professional_dlis_parser" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
                         <h3 class="mb-0">DLIS parser</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Software Engineering</span></li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Schlumberger</span></span></li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">Software Engineering</span></li>
+                                    <li><span class="ml-1 text-*-center subheading"><span class="mx-1">|</span><span>Schlumberger</span></span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">October 2017 – January 2018</span>
+                            </div>
                         </div>
-                        <p>A DLIS file is a log file created by sensors that monitor petroleum wells. I worked on
-                            creating a
-                            DLIS parser for extracting log headers and data from a DLIS file and store the information
-                            extracted in the logstore.</p>
+                        <p class="li_span">A DLIS file is a log file created by sensors that monitor petroleum wells. I worked on creating a DLIS parser for extracting log headers and data from a DLIS file and store the information extracted in the logstore.</p>
                         <div class="social-icon d-flex py-2">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <img class="iconify" style="width:4.0em; height:2.0em" src="img/nodejs.svg" alt="NodeJS" />
+                            <div>
+                                <iconify-icon icon="logos:nodejs" class="mx-3" style="font-size: 1.6em;"></iconify-icon>
+                            </div>
                         </div>
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">October 2017 – January 2018</span>
-                    </div>
                 </div>
-                <div id="coursework_mbso"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
-                    <div class="resume-content">
+                <div id="coursework_mbso" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
                         <h3 class="mb-0">Clustering using Brainstorm Optimization</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Machine Learning</span></li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Coursework</span></span></li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">Machine Learning</span></li>
+                                    <li><span class="ml-1 text-*-center subheading"><span class="mx-1">|</span><span>Coursework</span></span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">March 2016 – May 2016</span>
+                            </div>
                         </div>
-                        <p>Applied Brainstorm optimization, a swarm intelligence technique, to find optimal cluster
-                            clusters
-                            in protein dataset. Used Dunn index and DB index for internal cluster validity indices.</p>
+                        <p class="li_span">Applied Brainstorm optimization, a swarm intelligence technique, to find optimal cluster clusters in protein dataset. Used Dunn index and DB index for internal cluster validity indices.</p>
                         <div class="social-icon d-flex py-2">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <img class="iconify" src="img/python-icon.svg" alt="Python" />
+                            <div>
+                                <iconify-icon icon="vscode-icons:file-type-python" class="mx-1" style="font-size: 1.6em;"></iconify-icon> 
+                            </div>
                         </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">March 2016 – May 2016</span>
                     </div>
                 </div>
-                <div id="coursework_os"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5"
-                    style="width: 100%;"
-                    >
-                    <div class="resume-content">
+                <div id="coursework_os" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5" style="width: 100%;">
+                    <div class="resume-content w-100">
                         <h3 class="mb-0">Smart Gui for linux terminal</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Operating Systems</span></li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Coursework</span></span></li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li class="ml-1"><span class="subheading">Operating Systems</span></li>
+                                    <li><span class="ml-1 text-*-center subheading"><span
+                                                class="mx-1">|</span><span>Coursework</span></span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">February 2015 – April 2015</span>
+                            </div>
                         </div>
-                        <p>Developed a smart terminal GUI for Debian Linux Kernel 3.14-kali. Created new commands using
-                            linux system calls. Stored the user’s history to filter top five frequently used commands
-                            and
-                            displayed it on the GUI.</p>
+                        <p class="li_span">Developed a smart terminal GUI for Debian Linux Kernel 3.14-kali. Created new commands using linux system calls. Stored the user’s history to filter top five frequently used commands and displayed it on the GUI.</p>
                         <div class="d-flex pt-3 mb-4">
                             Code: <a href="https://github.com/karanpathak/Smart-Gui-Terminal" target="_blank"><span
                                     class="ml-1">View Code</span></a>
                         </div>
                         <div class="social-icon d-flex py-2">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <img class="iconify" src="img/python-icon.svg" alt="Python" />
-                            <i class="mx-1 iconify" data-icon="logos-qt" data-inline="true"></i>
+                            <div>
+                                <img class="iconify" src="img/python-icon.svg" alt="Python" />
+                                <i class="mx-1 iconify" data-icon="logos-qt" data-inline="true"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">February 2015 – April 2015</span>
                     </div>
                 </div>
-                <div id="coursework_trie"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
-                    <div class="resume-content">
+                <div id="coursework_trie" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
                         <h3 class="mb-0">Text search using Trie</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Data Structure & Algorithms</span></li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Coursework</span></span></li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li class="ml-1"><span class="subheading">Data Structure & Algorithms</span></li>
+                                    <li><span class="ml-1 text-*-center subheading"><span
+                                                class="mx-1">|</span><span>Coursework</span></span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">August 2014 - October 2014</span>
+                            </div>
                         </div>
-                        <p>Developed a cross-platform desktop app in C++ and Qt for searching text in a given paragraph
+                        <p class="li_span">Developed a cross-platform desktop app in C++ and Qt for searching text in a given paragraph
                             using Trie data structure.</p>
                         <div class="d-flex pt-3 mb-4">
                             Code: <a href="https://github.com/karanpathak/Text-search-Trie" target="_blank"><span
@@ -620,48 +928,43 @@
                         </div>
                         <div class="social-icon d-flex py-2">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <i class="mx-1 iconify" data-icon="logos-c-plusplus" data-inline="true"></i>
-                            <i class="mx-1 iconify" data-icon="logos-qt" data-inline="true"></i>
+                            <div>
+                                <i class="mx-1 iconify" data-icon="logos-c-plusplus" data-inline="true"></i>
+                                <i class="mx-1 iconify" data-icon="logos-qt" data-inline="true"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2014 - October 2014</span>
                     </div>
                 </div>
-                <div id="coursework_ecommerce"
-                    class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
-                    <div class="resume-content">
+                <div id="coursework_ecommerce" class="project-border d-none resume-item flex-column flex-md-row justify-content-between p-3 mb-5">
+                    <div class="resume-content w-100">
                         <h3 class="mb-0">KUcart Ecommerce</h3>
-                        <div>
-                            <ul class="list-inline d-inline-flex">
-                                <li class="ml-1"><span class="subheading">Web Development</span></li>
-                                <li><span class="ml-1 text-*-center subheading"><span
-                                            class="mx-1">|</span><span>Coursework</span></span></li>
-                            </ul>
+                        <div class="d-flex justify-content-between date_subheading_section">
+                            <div>
+                                <ul class="list-inline d-inline-flex">
+                                    <li><span class="subheading">Web Development</span></li>
+                                    <li><span class="ml-1 text-*-center subheading"><span class="mx-1">|</span><span>Coursework</span></span></li>
+                                </ul>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">March 2015 – April 2015</span>
+                            </div>
                         </div>
-                        <p>A simple E-commerce website.</p>
+                        <p class="li_span">A simple E-commerce website.</p>
 
                         <div class="d-flex pt-3 mb-4">
-                            Code: <a href="https://github.com/karanpathak/KUcart" target="_blank"><span
-                                    class="ml-2">View Code</span></a>
+                            Code: <a href="https://github.com/karanpathak/KUcart" target="_blank"><span class="ml-2">View Code</span></a>
                         </div>
 
                         <div class="social-icon d-flex pt-2">
                             <h5 class="d-inline mr-2 font-weight-light"><span>Languages & Packages</span></h5>
-                            <i class="mx-1 iconify" style="width: 2.0em; height: 2.0em;" data-icon="logos-php"
-                                data-inline="true"></i>
-                            <i class="mx-1 iconify" style="width: 2.0em; height: 2.0em;" data-icon="logos-html-5"
-                                data-inline="true"></i>
-                            <i class="mx-1 iconify" style="width: 2.0em; height: 2.0em;" data-icon="logos-css-3"
-                                data-inline="true"></i>
-                            <i class="mx-1 iconify" style="width: 4.0em; height: 2.5em;" data-icon="logos-jquery"
-                                data-inline="true"></i>
+                            <div>
+                                <i class="mx-1 iconify" style="width: 2.0em; height: 2.0em;" data-icon="logos-php" data-inline="true"></i>
+                                <i class="mx-1 iconify" style="width: 2.0em; height: 2.0em;" data-icon="logos-html-5" data-inline="true"></i>
+                                <i class="mx-1 iconify" style="width: 2.0em; height: 2.0em;" data-icon="logos-css-3" data-inline="true"></i>
+                                <i class="mx-1 iconify" style="width: 4.0em; height: 2.5em;" data-icon="logos-jquery" data-inline="true"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">March 2015 – April 2015</span>
-                    </div>
-
                 </div>
 
                 <ul class="mb-3 nav nav-pills">
@@ -738,7 +1041,6 @@
                     <div class="resume-content">
                         <h3 class="ml-2 text-*-center"><u>Presentations</u></h3>
                         <ul class="fa-ul mb-4 mt-4">
-
                             <li>
                                 <span class="fa-li"><i class="fas fa-square"></i></span>
                                 <span>
@@ -747,6 +1049,21 @@
                                     in <b>TECHDAY conference (internal)</b> at Schlumberger Pune
                                 </span>
                             </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span>
+                                    Gave a presentation on <b><em>Demystifying Data Science</em></b>
+                                    at Decodr Technologies
+                                </span>
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-square"></i></span>
+                                <span>
+                                    Gave a presentation on <b><em>Starting a Career in Data Science</em></b>
+                                    at IEEE ComSoc SBC, UKFCET
+                                </span>
+                            </li>
+
                         </ul>
 
                     </div>
@@ -765,22 +1082,22 @@
                 <ul class="fa-ul mb-0">
                     <li class="m-2">
                         <i class="fa-li fa fa-trophy text-warning"></i>
-                        <span class="mr-3">Ranked <b>11<sup>th</sup>/83 <i>(Top 13%)</i></b> in <em><a
-                                    href="https://iplab.dmi.unict.it/pollenclassificationchallenge/"
-                                    target="_blank">ICPR 2020 conference - Pollen Grain Classification Challenge
-                                </a></em>
-                        </span>
+                        <span class="mr-3">Quater Finalist</b> in <em><b>Swadeshi Microprocessor Challenge, Aatma Nirbhar Bharat Abhiyan, Govt. of India.</b></em></span>
+                        <a href="https://www.dropbox.com/s/3qty5oviqtxty54/Swadeshi%20Microprocessor%20Challenge%202020%20Quater%20Finalist%20Certificate.png?dl=0"target="_blank">Certificate</a>
                     </li>
+                    <li class="m-2">
+                        <i class="fa-li fa fa-trophy text-warning"></i>
+                        <span class="mr-3">Ranked <b>8<sup>th</sup></b> in <em><b>ICPR 2020 conference - Pollen Grain Classification Challenge</b></em></span>
+                        <a href="https://www.dmi.unict.it/ortis/articoli/85104387323.pdf"target="_blank">Certificate</a>
+                    </li>
+                  
                     <li class="m-2">
                         <i class="fa-li fa fa-trophy text-warning"></i>
                         <span class="mr-3">Certificate of Appreciation for presenting Presented my paper titled
                             <em>“Hand Gesture Recognition and FingerTip Detection using Neural Networks” </em> in
                             <b>World Summit On Advances in Science, Engineering and Technology conference</b> at the
-                            University of Cambridge, U.K. in 2018
-
-                        </span>
-                        <a href="https://drive.google.com/open?id=1WElfRLGAREjyNeRSzheL_Te-ZcDCoy0m"
-                            target="_blank">Certificate</a>
+                            University of Cambridge, U.K. in 2018.</span>
+                        <a href="https://drive.google.com/open?id=1WElfRLGAREjyNeRSzheL_Te-ZcDCoy0m"target="_blank">Certificate</a>
                     </li>
                     <li class="m-2">
                         <i class="fa-li fa fa-trophy text-warning"></i>
@@ -832,10 +1149,45 @@
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="resume-content">
+                        <h3 class="mb-0">Simon Fraser University</h3>
+                        <div class="subheading mb-3">Master of Science in Professional Computer Science (VisualComputing specialization)</div>
+                        <p>Cumulative GPA: 3.78 / 4.33</p>
+                        <div>
+                            <u>AREA OF INTEREST</u>
+                            <ul class="fa-ul mt-1 mb-4">
+                                <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Distributed systems and algorithms</span></li>
+                                <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Semantic segmentation</span></li>
+                                <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Generative adversarial network</span></li>
+                                </li>
+                            </ul>
+
+                            <u>RELATED COURSES</u>
+                            <ul class="fa-ul mt-1 mb-4">
+                                <li class="mt-1">
+                                    <!-- <span class="fa-li"><i class="fas fa-square"></i></span><span>Data Science</span> -->
+                                    <ul>
+                                        <li><span>Distributed and Cloud Systems</span></li>
+                                        <li><span>Practices in visual computing 1</span></li>
+                                        <li><span>Practices in visual computing 2</span></li>
+                                        <li><span>Data Science in Business</span></li>
+                                        <li><span>Machine Learning</span></li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">September 2022 - Present</span>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
                         <h3 class="mb-0">Vellore Institute of Technology</h3>
                         <div class="subheading mb-3">Bachelor of Technology in Computer Science and Engineering</div>
-                        <p>Cumulative GPA: 8.92/10</p>
-                        <div>
+                        <p>Cumulative GPA: 8.92 / 10</p>
+                        <div class="pb-5">
                             <u>AREA OF INTEREST</u>
                             <ul class="fa-ul mt-1 mb-4">
                                 <li><span class="fa-li"><i class="fas fa-square"></i></span><span>Data Structures and
@@ -887,7 +1239,6 @@
                                 target="_blank">https://www.youtube.com/watch?v=gcHJ179Yop4</a>
 
                         </div>
-
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">July 2013 - August 2017</span>
@@ -950,9 +1301,9 @@
                                     target="_blank">see credentials</a>
                             </li>
                             <li>
-                                <span class="fa-li"><i class="far fa-square"></i></span>
+                                <span class="fa-li"><i class="fas fa-check-square"></i></span>
                                 <span class="mr-3">Convolutional Neural Networks</span>
-                                <span class="credentials-link">In progress</span>
+                                <!-- <span class="credentials-link">In progress</span> -->
                             </li>
                         </ul>
 
@@ -966,21 +1317,11 @@
                                     target="_blank">see credentials</a>
                             </li>
                             <li>
-                                <span class="fa-li"><i class="far fa-square"></i></span>
+                                <span class="fa-li"><i class="fas fa-check-square"></i></span>
                                 <span class="mr-3">Convolutional Neural Networks in TensorFlow</span>
-                                <span class="credentials-link">In progress</span>
+                                <!-- <span class="credentials-link">In progress</span> -->
                             </li>
                         </ul>
-
-                        <div class="specialization mb-1">Self-Driving Cars Specialization by University of Toronto</div>
-                        <ul class="fa-ul mb-4">
-                            <li>
-                                <span class="fa-li"><i class="far fa-square"></i></span>
-                                <span class="mr-3">Introduction to Self-Driving Cars</span>
-                                <span class="credentials-link">In progress</span>
-                            </li>
-                        </ul>
-
 
                         <div class="specialization mb-1">Courses</div>
                         <ul class="fa-ul mb-4">

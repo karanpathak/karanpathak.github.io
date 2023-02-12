@@ -27,10 +27,21 @@
   });
 
 $(window).on('load', function(){
-    var professional_ds_ids = ["professional_seafloor", "professional_salt", "professional_fault"];
+    var professional_ds_ids = [
+      "professional_1", 
+      "professional_2", 
+      "professional_3", 
+      "professional_4",
+      "professional_5",
+      "professional_6",
+      "professional_7",
+      "professional_seafloor", 
+      "professional_salt", 
+      "professional_fault" 
+    ];
     var professional_software_ids = ["professional_logstore_client", "professional_dlis_parser"];
     var capstone_project_ids = ["capstone_mouse_control"];
-    var personal_project_ids = ["coursework_mbso", "coursework_os", "coursework_trie", "coursework_ecommerce"];
+    var personal_project_ids = ["personal_1", "coursework_mbso", "coursework_os", "coursework_ecommerce", "coursework_trie"];
 
     var professional_project_id, capstone_project_id, personal_project_id;
 
