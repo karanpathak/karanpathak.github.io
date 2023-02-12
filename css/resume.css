@@ -3,26 +3,29 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,body {
+   padding: 0;
+   margin: 0;
+   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+   scroll-behavior: smooth;
+}
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #868e96;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
+a {
+  color: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6{
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
@@ -53,7 +56,6 @@ p.lead {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
 }
-
 
 .specialization {
   text-transform: uppercase;
@@ -97,7 +99,52 @@ p.lead {
   outline-color: #d48a6e;
 }
 
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+.bg-primary {
+  background-color: #314f6ffc !important;
+}
+
+.text-primary {
+color: black !important
+}
+
+a {
+  color: #BD5D38;
+}
+
+.credentials-link{
+    color: #BD5D38;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+.resume-section{
+  padding: 5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.project-border{
+    border: 1px solid grey
+}
+.logos_card{
+  padding: 3rem 0;
+}
+.iconify { width: 1.5em; height: 1.5em;}
+
+.social-icon div{
+  display: flex;
+  justify-content: flex-start !important;
+  padding-bottom: 0.5rem!important;
+}
 @media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
   #sideNav {
     text-align: center;
     position: fixed;
@@ -135,57 +182,85 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
-}
-
-section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  max-width: 75rem;
-}
-
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
+  .resume-section {
+    padding: 3rem 1rem;
   }
-  section.resume-section .resume-item .resume-date {
+}
+
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 3rem 1rem;
+    width: 100% !important;
+    align-items: flex-start !important;
+  }
+  h1{
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
+  }
+  h2{
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
+  h3{
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+  h4{
+    font-size: 1.2rem;
+    line-height: 1.5rem !important;
+  }
+  .subheading{
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .navbar-nav{
+    padding: 30px 20px;
+    height: 100vh;
+  }
+  .navbar-brand{
+    padding-left: 20px;
+  }
+  .navbar-toggler{
+    margin-right: 20px;
+  }
+  .nav {
+    --cui-nav-link-padding-x: 0.5rem !important;
+  }
+  .li_span{
+    display: block;
+    width: 100%;
+    text-align: justify;
+    text-justify: auto;
+  }
+  /* section.resume-section .resume-item .resume-date {
     min-width: 18rem;
+  } */
+  .author{
+    text-align: end;
+  }
+  .blockquote{
+    margin: 0.5rem 0;
+  }
+  .lead{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .logos_card{
+    margin-top: 2rem !important;
+    padding: 0 !important;
+  }
+  .date_subheading_section{
+    flex-direction: column;
+  }
+  .resume-date{
+    text-align: right;
+  }
+  .social-icon{
+    flex-direction: column;
+  }
+  .social-icon div{
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start;
   }
 }
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.bg-primary {
-  background-color: #314f6ffc !important;
-}
-
-.text-primary {
-color: black !important
-}
-
-a {
-  color: #BD5D38;
-}
-
-.credentials-link{
-    color: #BD5D38;
-}
-
-a:hover, a:focus, a:active {
-text-decoration: none;
-  /*color: #824027;*/
-}
-
-.project-border{
-    border: 1px solid grey
-}
-
-.iconify { width: 1.5em; height: 1.5em;}
